@@ -1,46 +1,53 @@
-import React, { createContext, useContext, useMemo } from "react";
+// src/i18n/i18n.tsx
+import React from "react";
 import { de } from "./de";
 import { en } from "./en";
 
 export type Lang = "de" | "en";
-export type Dictionary = typeof de;
 
-const dictionaries: Record<Lang, Dictionary> = { de, en };
+/**
+ * We deliberately widen the dictionary type so DE/EN can differ freely.
+ * No literal-type conflicts between languages.
+ */
+type Dictionary = Record<string, unknown>;
 
-type I18nValue = {
-  lang: Lang;
-  dict: Dictionary;
-  t: (path: string) => string;
+const dictionaries: Record<Lang, Dictionary> = {
+  de: de as unknown as Dictionary,
+  en: en as unknown as Dictionary,
 };
-
-const I18nContext = createContext<I18nValue | null>(null);
 
 function getByPath(obj: unknown, path: string): unknown {
   const parts = path.split(".");
-  let cur: any = obj;
+  let cur: unknown = obj;
+
   for (const p of parts) {
-    if (!cur || typeof cur !== "object" || !(p in cur)) return null;
-    cur = cur[p];
+    if (!cur || typeof cur !== "object") return undefined;
+    cur = (cur as Record<string, unknown>)[p];
   }
   return cur;
 }
 
+export type TFunc = (key: string) => string;
+type Ctx = { lang: Lang; t: TFunc };
+
+const I18nContext = React.createContext<Ctx | null>(null);
+
 export function I18nProvider({ lang, children }: { lang: Lang; children: React.ReactNode }): JSX.Element {
   const dict = dictionaries[lang];
 
-  const value = useMemo<I18nValue>(() => {
-    const t = (path: string): string => {
-      const v = getByPath(dict, path);
-      return typeof v === "string" ? v : path;
-    };
-    return { lang, dict, t };
-  }, [dict, lang]);
+  const t = React.useCallback<TFunc>(
+    (key) => {
+      const v = getByPath(dict, key);
+      return typeof v === "string" ? v : key; // fallback shows key if missing
+    },
+    [dict]
+  );
 
-  return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
+  return <I18nContext.Provider value={{ lang, t }}>{children}</I18nContext.Provider>;
 }
 
-export function useI18n(): I18nValue {
-  const ctx = useContext(I18nContext);
-  if (!ctx) throw new Error("useI18n must be used within I18nProvider");
+export function useI18n(): Ctx {
+  const ctx = React.useContext(I18nContext);
+  if (!ctx) throw new Error("useI18n must be used within <I18nProvider>");
   return ctx;
 }
