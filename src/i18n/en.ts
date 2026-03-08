@@ -44,6 +44,9 @@ export const en = {
     all: "All",
     empty: "No trips found. Adjust filters.",
     back: "Back",
+    close: "Close",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
   },
   home: {
     headline: "Your personal journey",
