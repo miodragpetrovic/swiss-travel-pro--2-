@@ -92,7 +92,7 @@ export const TRIPS: Trip[] = [
       ],
     },
     regions: ["Graubünden", "Valais"],
-    experiences: ["Panorama", "Luxury", "Train"],
+    experiences: ["Panorama", "Luxus", "Zugreise"],
   },
   {
     id: "t2",
@@ -120,7 +120,7 @@ export const TRIPS: Trip[] = [
       en: ["Jungfraujoch – Top of Europe", "Bernina panorama route", "Lucerne & Lake Lucerne"],
     },
     included: {
-      de: ["Zugtickets & Reservationen gemäss Programm", "7 Hotelnächte inkl. Frühstück", "Bergbahnticket Jungfraujoch", "Reiseunterlagen & Support"],
+      de: ["Zugtickets & Reservationen gemäss Programm", "7 Hotelnächte inkl. Frühstück", "Bergbahnticket Jungfraujoch", "Reiseunterlagen & Betreuung"],
       en: ["Train tickets & reservations per itinerary", "7 hotel nights incl. breakfast", "Jungfraujoch mountain ticket", "Travel documents & support"],
     },
     itinerary: {
@@ -146,7 +146,7 @@ export const TRIPS: Trip[] = [
       ],
     },
     regions: ["Zürich", "Luzern", "Bern", "Graubünden", "Vaud"],
-    experiences: ["Panorama", "Round trip", "Mountains"],
+    experiences: ["Panorama", "Rundreise", "Berge"],
   },
   
   {
@@ -191,8 +191,8 @@ export const TRIPS: Trip[] = [
         { day: "Day 4", text: "Return to Switzerland." },
       ],
     },
-    regions: ["Graubünden", "Italy"],
-    experiences: ["Panorama", "Train", "Lakes"],
+    regions: ["Graubünden", "Italien"],
+    experiences: ["Panorama", "Zugreise", "Seen"],
   },
   {
     id: "t5",
@@ -209,7 +209,7 @@ export const TRIPS: Trip[] = [
     gallery: [u("photo-1548013146-72479768bada"), u("photo-1516571748831-5d81767b788d"), u("photo-1482192596544-9eb780fc7f66")],
     title: { de: "Winter-Magie Zermatt (Gruppe)", en: "Winter Magic Zermatt (Group)" },
     bullets: {
-      de: ["Geführte Gruppe (max. 16 Personen)", "Gornergrat-Ausflug inklusive", "Hotel im Zentrum, Frühstück & Dinner-Option"],
+      de: ["Geführte Gruppe (max. 16 Personen)", "Gornergrat-Ausflug inklusive", "Hotel im Zentrum, Frühstück & optionale Abendessen"],
       en: ["Guided group (max 16 guests)", "Gornergrat excursion included", "Central hotel, breakfast & dinner option"],
     },
     overview: {
@@ -221,7 +221,7 @@ export const TRIPS: Trip[] = [
       en: ["Gornergrat railway", "Fondue night (optional)", "Winter hiking trails"],
     },
     included: {
-      de: ["5 Hotelnächte inkl. Frühstück", "Welcome-Briefing & Guide", "Gornergrat Ticket", "ÖV-Pässe vor Ort"],
+      de: ["5 Hotelnächte inkl. Frühstück", "Begrüssungsbriefing & Reiseleitung", "Gornergrat Ticket", "ÖV-Pässe vor Ort"],
       en: ["5 hotel nights incl. breakfast", "Welcome briefing & guide", "Gornergrat ticket", "Local transport passes"],
     },
     itinerary: {
@@ -243,7 +243,7 @@ export const TRIPS: Trip[] = [
       ],
     },
     regions: ["Valais"],
-    experiences: ["Group", "Winter", "Mountains"],
+    experiences: ["Gruppe", "Winter", "Berge"],
   },
   
 
@@ -265,7 +265,7 @@ export const TRIPS: Trip[] = [
     months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     imageUrl: IMG.hero5,
     gallery: [IMG.hero2, IMG.hero3, IMG.g6],
-    title: { de: "Jungfrau Highlights Escape", en: "Jungfrau Highlights Escape" },
+    title: { de: "Jungfrau Highlights Kurztrip", en: "Jungfrau Highlights Escape" },
     bullets: {
       de: ["Interlaken als Basis", "Aussichtspunkte & Bergbahnen flexibel", "Perfekt für 4 Tage Schweiz"],
       en: ["Interlaken as your base", "Flexible viewpoints & mountain railways", "Perfect 4-day Switzerland trip"],
@@ -275,11 +275,11 @@ export const TRIPS: Trip[] = [
       en: "A compact round trip focused on mountains, lakes and iconic viewpoints in the Jungfrau region.",
     },
     highlights: {
-      de: ["Lauterbrunnen-Tal", "Panorama-Stops", "Optional: Jungfraujoch Upgrade"],
+      de: ["Lauterbrunnen-Tal", "Panorama-Stops", "Optional: Upgrade aufs Jungfraujoch"],
       en: ["Lauterbrunnen valley", "Panorama stops", "Optional: Jungfraujoch upgrade"],
     },
     included: {
-      de: ["3 Hotelnächte inkl. Frühstück", "ÖV-Empfehlungen & Ticket-Tipps", "Reiseunterlagen", "Support"],
+      de: ["3 Hotelnächte inkl. Frühstück", "ÖV-Empfehlungen & Ticket-Tipps", "Reiseunterlagen", "Betreuung"],
       en: ["3 hotel nights incl. breakfast", "Local transport tips", "Travel documents", "Support"],
     },
     itinerary: {
@@ -297,7 +297,7 @@ export const TRIPS: Trip[] = [
       ],
     },
     regions: ["Bern"],
-    experiences: ["Mountains", "Panorama", "Round trip"],
+    experiences: ["Berge", "Panorama", "Rundreise"],
   },
  
   {
@@ -317,7 +317,7 @@ export const TRIPS: Trip[] = [
       en: ["Zurich & Lucerne compact", "Lakeside breaks and old-town moments", "Ideal as a first Switzerland trip"],
     },
     overview: {
-      de: "Ein ausgewogener Kurztrip mit City-Vibes und See-Erholung — schnell, hochwertig, klar organisiert.",
+      de: "Ein ausgewogener Kurztrip mit Stadtflair und See-Erholung — schnell, hochwertig, klar organisiert.",
       en: "A balanced short break with city vibes and lakeside relaxation — fast, premium, well-organized.",
     },
     highlights: {
@@ -325,7 +325,7 @@ export const TRIPS: Trip[] = [
       en: ["Old-town strolls", "Chapel Bridge in Lucerne", "Panorama stops en route"],
     },
     included: {
-      de: ["4 Hotelnächte inkl. Frühstück", "Reiseunterlagen", "ÖV-Tipps & Kartenlinks", "Support"],
+      de: ["4 Hotelnächte inkl. Frühstück", "Reiseunterlagen", "ÖV-Tipps & Kartenlinks", "Betreuung"],
       en: ["4 hotel nights incl. breakfast", "Travel documents", "Local transport tips", "Support"],
     },
     itinerary: {
@@ -345,7 +345,7 @@ export const TRIPS: Trip[] = [
       ],
     },
     regions: ["Zürich", "Luzern", "Vaud"],
-    experiences: ["Lakes", "Round trip"],
+    experiences: ["Seen", "Rundreise"],
   },
 
   // --- Gruppenreisen (5) ---
@@ -361,7 +361,7 @@ export const TRIPS: Trip[] = [
     months: [6, 7, 8, 9],
     imageUrl: IMG.hero3,
     gallery: [IMG.hero2, IMG.hero5, IMG.g6],
-    title: { de: "Interlaken Adventure (Gruppe)", en: "Interlaken Adventure (Group)" },
+    title: { de: "Interlaken Abenteuer (Gruppe)", en: "Interlaken Adventure (Group)" },
     bullets: {
       de: ["Aktive Tage in der Jungfrau-Region", "Optionale Outdoor-Erlebnisse", "Kleine Gruppe, klare Planung"],
       en: ["Active days in the Jungfrau region", "Optional outdoor experiences", "Small group, clear planning"],
@@ -371,7 +371,7 @@ export const TRIPS: Trip[] = [
       en: "For teams & friends: mountains, lakes and optional activities — organized without stress.",
     },
     highlights: {
-      de: ["Aussichtspunkte & Täler", "Bootszeit am See", "Optionale Action-Module"],
+      de: ["Aussichtspunkte & Täler", "Bootszeit am See", "Optionale Aktivitätsmodule"],
       en: ["Viewpoints & valleys", "Lake time by boat", "Optional action modules"],
     },
     included: {
@@ -395,7 +395,7 @@ export const TRIPS: Trip[] = [
       ],
     },
     regions: ["Bern"],
-    experiences: ["Group", "Mountains", "Lakes"],
+    experiences: ["Gruppe", "Berge", "Seen"],
   },
   
   {
@@ -411,7 +411,7 @@ export const TRIPS: Trip[] = [
     months: [12, 1, 2, 3],
     imageUrl: IMG.g8,
     gallery: [IMG.g7, IMG.g8, IMG.hero1],
-    title: { de: "Davos Ski Week (Gruppe)", en: "Davos Ski Week (Group)" },
+    title: { de: "Davos Skiwoche (Gruppe)", en: "Davos Ski Week (Group)" },
     bullets: {
       de: ["Winterwoche für Gruppen", "Optionale Ski- & Wellness-Pakete", "Top-Basis in Graubünden"],
       en: ["Winter week for groups", "Optional ski & wellness packages", "Great base in Graubünden"],
@@ -425,7 +425,7 @@ export const TRIPS: Trip[] = [
       en: ["Winter panorama", "Optional ski days", "Relaxed farewell evening"],
     },
     included: {
-      de: ["6 Hotelnächte inkl. Frühstück", "Gruppenkoordination vor Ort", "ÖV-Tipps", "Reiseunterlagen & Support"],
+      de: ["6 Hotelnächte inkl. Frühstück", "Gruppenkoordination vor Ort", "ÖV-Tipps", "Reiseunterlagen & Betreuung"],
       en: ["6 hotel nights incl. breakfast", "Local group coordination", "Local transport tips", "Travel documents & support"],
     },
     itinerary: {
@@ -449,7 +449,7 @@ export const TRIPS: Trip[] = [
       ],
     },
     regions: ["Graubünden"],
-    experiences: ["Group", "Winter", "Mountains"],
+    experiences: ["Gruppe", "Winter", "Berge"],
   },
   
   {
@@ -494,13 +494,13 @@ export const TRIPS: Trip[] = [
       ],
     },
     regions: ["Zürich", "Bern"],
-    experiences: ["Group", "Panorama", "Train"],
+    experiences: ["Gruppe", "Panorama", "Zugreise"],
   },
 ];
 
-export const EXPERIENCES = ["Panorama", "Luxury", "Train", "Mountains", "Lakes", "Round trip", "Winter", "Group"] as const;
+export const EXPERIENCES = ["Panorama", "Luxus", "Zugreise", "Berge", "Seen", "Rundreise", "Winter", "Gruppe"] as const;
 
-export const REGIONS = ["Zürich", "Luzern", "Bern", "Vaud", "Valais", "Graubünden", "Tessin", "Italy"] as const;
+export const REGIONS = ["Zürich", "Luzern", "Bern", "Vaud", "Valais", "Graubünden", "Tessin", "Italien"] as const;
 
 export function getTripTitle(trip: Trip, lang: Lang): string {
   return trip.title[lang];

@@ -143,7 +143,7 @@ export const en = {
     terms: "Terms",
   },
   footer: {
-    note: "Demo project. Content is placeholder.",
+    note: "Demo project.",
     newsletter: "Newsletter",
     newsletterHint: "Monthly inspiration & deals (demo).",
     subscribe: "Subscribe",

@@ -143,7 +143,7 @@ export const de = {
     terms: "AGB",
   },
   footer: {
-    note: "Demo‑Projekt. Inhalte sind Platzhalter.",
+    note: "Demo‑Projekt.",
     newsletter: "Newsletter",
     newsletterHint: "Monatliche Inspirationen & Angebote (Demo).",
     subscribe: "Abonnieren",
