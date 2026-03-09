@@ -310,7 +310,7 @@ export const TRIPS: Trip[] = [
     travelPeriod: { de: "März bis November", en: "March to November" },
     months: [3, 4, 5, 6, 7, 8, 9, 10, 11],
     imageUrl: IMG.hero2,
-    gallery: [IMG.hero6, IMG.hero3, IMG.g3],
+    gallery: [IMG.hero3, IMG.g3],
     title: { de: "Schweizer Städte & Seen – Kurztrip", en: "Swiss Cities & Lakes – Short Break" },
     bullets: {
       de: ["Zürich & Luzern kompakt", "Seepausen und Altstadt-Momente", "Ideal als erste Schweiz-Reise"],
