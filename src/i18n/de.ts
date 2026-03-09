@@ -44,7 +44,7 @@ export const de = {
     all: "Alle",
     empty: "Keine Reisen gefunden. Bitte Filter anpassen.",
     back: "Zurück",
-    close: "Schließen",
+    close: "Schliessen",
     openMenu: "Menü öffnen",
     closeMenu: "Menü schliessen",
   },
