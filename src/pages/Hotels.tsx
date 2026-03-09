@@ -4,7 +4,6 @@ import { ExternalLink, MapPin, Search, Star } from "lucide-react";
 import { PageShell } from "./_PageShell";
 import { Card } from "../components/Card";
 import { Button } from "../components/Button";
-import { Pagination } from "../components/Pagination";
 import { useI18n } from "../i18n/i18n";
 import { HOTELS, type Hotel } from "../data/hotels";
 
@@ -73,6 +72,10 @@ export function Hotels(): JSX.Element {
     from: lang === "de" ? "ab" : "from",
     perNight: lang === "de" ? "pro Nacht" : "per night",
     website: lang === "de" ? "Website" : "Website",
+    prev: lang === "de" ? "Zurück" : "Previous",
+    next: lang === "de" ? "Weiter" : "Next",
+    page: lang === "de" ? "Seite" : "Page",
+    of: lang === "de" ? "von" : "of",
   };
 
   return (
@@ -229,8 +232,30 @@ export function Hotels(): JSX.Element {
         )}
       </div>
 
-      <div className="mt-8">
-        <Pagination page={safePage} totalPages={totalPages} onChange={setPage} />
+      <div className="mt-8 flex items-center justify-center gap-3">
+        <Button
+          type="button"
+          variant="secondary"
+          className="h-11 px-4"
+          onClick={() => setPage((p) => clamp(p - 1, 1, totalPages))}
+          disabled={safePage <= 1}
+        >
+          {ui.prev}
+        </Button>
+
+        <div className="rounded-2xl bg-white px-4 py-2 text-sm font-bold text-slate-700 ring-1 ring-slate-200">
+          {ui.page} {safePage} {ui.of} {totalPages}
+        </div>
+
+        <Button
+          type="button"
+          variant="secondary"
+          className="h-11 px-4"
+          onClick={() => setPage((p) => clamp(p + 1, 1, totalPages))}
+          disabled={safePage >= totalPages}
+        >
+          {ui.next}
+        </Button>
       </div>
     </PageShell>
   );
