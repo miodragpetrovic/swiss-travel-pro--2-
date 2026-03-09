@@ -105,7 +105,7 @@ export const TRIPS: Trip[] = [
     travelPeriod: { de: "April bis Oktober", en: "April to October" },
     months: [4, 5, 6, 7, 8, 9, 10],
     imageUrl: u("photo-1501785888041-af3ef285b470"),
-    gallery: [u("photo-1500043357865-c6b8827edf8f"), u("photo-1519681393784-d120267933ba"), u("photo-1470770841072-f978cf4d019e")],
+    gallery: [u("photo-1519681393784-d120267933ba"), u("photo-1470770841072-f978cf4d019e")],
     title: { de: "Grand Train Tour of Switzerland – Klassiker Jungfrau", en: "Grand Train Tour of Switzerland – Classic Jungfrau" },
     bullets: {
       de: ["Panoramafahrt im Glacier Express, Bernina Express, GoldenPass und Gotthard", "Bergausflug aufs Jungfraujoch – Top of Europe", "Gepäcktransport buchbar"],
@@ -159,7 +159,7 @@ export const TRIPS: Trip[] = [
     travelPeriod: { de: "März bis November", en: "March to November" },
     months: [3, 4, 5, 6, 7, 8, 9, 10, 11],
     imageUrl: u("photo-1501555088652-021faa106b9b"),
-    gallery: [u("photo-1491553895911-0055eca6402d"), u("photo-1526772662000-3f88f10405ff"), u("photo-1500043357865-c6b8827edf8f")],
+    gallery: [u("photo-1526772662000-3f88f10405ff")],
     title: { de: "Bernina Express & Comer See", en: "Bernina Express & Lake Como" },
     bullets: {
       de: ["Bernina Express Panorama nach Tirano", "1 Nacht am Comer See", "Beste Fotospots auf 2'253 m ü. M."],
