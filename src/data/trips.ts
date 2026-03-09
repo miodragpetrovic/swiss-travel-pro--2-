@@ -409,8 +409,8 @@ export const TRIPS: Trip[] = [
     priceFromCHF: 1490,
     travelPeriod: { de: "Dezember bis März", en: "December to March" },
     months: [12, 1, 2, 3],
-    imageUrl: IMG.hero5,
-    gallery: [IMG.g7, IMG.g8, IMG.hero1],
+    imageUrl: IMG.g7,
+    gallery: [IMG.g7, IMG.g5, IMG.g8, IMG.hero1],
     title: { de: "Davos Ski Week (Gruppe)", en: "Davos Ski Week (Group)" },
     bullets: {
       de: ["Winterwoche für Gruppen", "Optionale Ski- & Wellness-Pakete", "Top-Basis in Graubünden"],
